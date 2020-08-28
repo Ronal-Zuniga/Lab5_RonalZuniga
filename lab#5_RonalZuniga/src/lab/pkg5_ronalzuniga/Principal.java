@@ -5,6 +5,12 @@
  */
 package lab.pkg5_ronalzuniga;
 
+import java.awt.Color;
+import java.util.Date;
+import javax.swing.DefaultListModel;
+import javax.swing.JColorChooser;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Josué Zuniga
@@ -27,21 +33,487 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        add_country = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        tf_nompais = new javax.swing.JTextField();
+        dc_fundacion = new com.toedter.calendar.JDateChooser();
+        tf_himno = new javax.swing.JTextField();
+        b_color = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        add_person = new javax.swing.JDialog();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        tf_nacionalidad = new javax.swing.JTextField();
+        tf_nombre = new javax.swing.JTextField();
+        tf_apellido = new javax.swing.JTextField();
+        sp_edad = new javax.swing.JSpinner();
+        cb_genero = new javax.swing.JComboBox<>();
+        tf_vocacion = new javax.swing.JTextField();
+        cb_titulo = new javax.swing.JComboBox<>();
+        cb_covid = new javax.swing.JComboBox<>();
+        jButton2 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jl_mujeres = new javax.swing.JList<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jl_hombres = new javax.swing.JList<>();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jl_paises = new javax.swing.JList<>();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        arborl1 = new javax.swing.JTree();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        arborl2 = new javax.swing.JTree();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        Menu_add = new javax.swing.JMenu();
+        add_pais = new javax.swing.JMenuItem();
+        add_persona = new javax.swing.JMenuItem();
+        Menu_list = new javax.swing.JMenu();
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        jLabel1.setText("Agregar País");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setText("Nombre");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setText("Fecha de Fundación");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setText("Himno Nacional");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel5.setText("Color de Bandera");
+
+        tf_nompais.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        tf_himno.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        b_color.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b_colorMouseClicked(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton1.setText("AGREGAR");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout add_countryLayout = new javax.swing.GroupLayout(add_country.getContentPane());
+        add_country.getContentPane().setLayout(add_countryLayout);
+        add_countryLayout.setHorizontalGroup(
+            add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(add_countryLayout.createSequentialGroup()
+                .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(add_countryLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addGap(83, 83, 83)
+                        .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_nompais)
+                            .addComponent(dc_fundacion, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                            .addComponent(tf_himno, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(b_color, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(add_countryLayout.createSequentialGroup()
+                        .addGap(279, 279, 279)
+                        .addComponent(jLabel1))
+                    .addGroup(add_countryLayout.createSequentialGroup()
+                        .addGap(284, 284, 284)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(171, Short.MAX_VALUE))
+        );
+        add_countryLayout.setVerticalGroup(
+            add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(add_countryLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(add_countryLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(67, 67, 67)
+                        .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(tf_nompais, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(dc_fundacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabel4))
+                    .addComponent(tf_himno, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(add_countryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(add_countryLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel5))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, add_countryLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(b_color, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(79, 79, 79)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(138, Short.MAX_VALUE))
+        );
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel6.setText("Agregar Personas");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel7.setText("Nacionalidad");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel8.setText("Nombre");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel9.setText("Apellido");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel10.setText("Edad");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel11.setText("Género");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel12.setText("Vocación");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel13.setText("Título Universitario");
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel14.setText("¿Tiene COVID-19?");
+
+        tf_nacionalidad.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        tf_nombre.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        tf_apellido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+
+        sp_edad.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        sp_edad.setValue(20);
+
+        cb_genero.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        cb_genero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Femenino", "Masculino" }));
+
+        tf_vocacion.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        tf_vocacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_vocacionActionPerformed(evt);
+            }
+        });
+
+        cb_titulo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        cb_titulo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SI", "NO" }));
+
+        cb_covid.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        cb_covid.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SI", "NO" }));
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton2.setText("AGREGAR");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout add_personLayout = new javax.swing.GroupLayout(add_person.getContentPane());
+        add_person.getContentPane().setLayout(add_personLayout);
+        add_personLayout.setHorizontalGroup(
+            add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(add_personLayout.createSequentialGroup()
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(add_personLayout.createSequentialGroup()
+                        .addGap(300, 300, 300)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(add_personLayout.createSequentialGroup()
+                        .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(add_personLayout.createSequentialGroup()
+                                .addGap(194, 194, 194)
+                                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                    .addComponent(jLabel12)
+                                    .addComponent(jLabel11)
+                                    .addComponent(jLabel10)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel7))
+                                .addGap(150, 150, 150))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, add_personLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel14)
+                                    .addComponent(jLabel13))
+                                .addGap(108, 108, 108)))
+                        .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tf_nacionalidad)
+                            .addComponent(tf_nombre)
+                            .addComponent(tf_apellido)
+                            .addComponent(sp_edad, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cb_genero, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tf_vocacion, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                            .addComponent(cb_titulo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(cb_covid, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(add_personLayout.createSequentialGroup()
+                        .addGap(386, 386, 386)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(228, Short.MAX_VALUE))
+        );
+        add_personLayout.setVerticalGroup(
+            add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(add_personLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(tf_nacionalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(tf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(tf_apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(add_personLayout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(add_personLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(sp_edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(28, 28, 28)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel11)
+                    .addComponent(cb_genero, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(tf_vocacion, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cb_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
+                .addGap(31, 31, 31)
+                .addGroup(add_personLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(cb_covid, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CONTROL DE COVID DE LA ONU");
+
+        jl_mujeres.setModel(new DefaultListModel());
+        jScrollPane1.setViewportView(jl_mujeres);
+
+        jl_hombres.setModel(new DefaultListModel());
+        jScrollPane2.setViewportView(jl_hombres);
+
+        jl_paises.setModel(new DefaultListModel());
+        jScrollPane3.setViewportView(jl_paises);
+
+        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Países");
+        arborl1.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jScrollPane4.setViewportView(arborl1);
+
+        treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Países");
+        arborl2.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
+        jScrollPane5.setViewportView(arborl2);
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel15.setText("Países");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel16.setText("Mujeres");
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel17.setText("Hombres");
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel18.setText("Personas por País");
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel19.setText("Infectados por País");
+
+        Menu_add.setText("Agregar");
+        Menu_add.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Menu_add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Menu_addActionPerformed(evt);
+            }
+        });
+
+        add_pais.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab/pkg5_ronalzuniga/add.png"))); // NOI18N
+        add_pais.setText("Agregar País");
+        add_pais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_paisActionPerformed(evt);
+            }
+        });
+        Menu_add.add(add_pais);
+
+        add_persona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lab/pkg5_ronalzuniga/add.png"))); // NOI18N
+        add_persona.setText("Agregar Personas");
+        add_persona.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                add_personaActionPerformed(evt);
+            }
+        });
+        Menu_add.add(add_persona);
+
+        jMenuBar1.add(Menu_add);
+
+        Menu_list.setText("Listar");
+        Menu_list.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jMenuBar1.add(Menu_list);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(121, 121, 121)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(103, 103, 103))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(jLabel15)
+                .addGap(278, 278, 278)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel17)
+                .addGap(107, 107, 107))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(166, 166, 166)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel19)
+                .addGap(187, 187, 187))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void add_personaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_personaActionPerformed
+        add_person.setModal(true);
+        add_person.pack();
+        add_person.setLocationRelativeTo(this);
+        add_person.setVisible(true);
+    }//GEN-LAST:event_add_personaActionPerformed
+
+    private void Menu_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Menu_addActionPerformed
+
+    }//GEN-LAST:event_Menu_addActionPerformed
+
+    private void add_paisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_paisActionPerformed
+        add_country.setModal(true);
+        add_country.pack();
+        add_country.setLocationRelativeTo(this);
+        add_country.setVisible(true);
+    }//GEN-LAST:event_add_paisActionPerformed
+
+    private void b_colorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_colorMouseClicked
+        color = JColorChooser.showDialog(this, "Elija un Color", color);
+        b_color.setBackground(color);
+    }//GEN-LAST:event_b_colorMouseClicked
+
+    private void tf_vocacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_vocacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_vocacionActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        DefaultListModel modelo = (DefaultListModel) jl_paises.getModel();
+        modelo.addElement(new Pais(tf_nompais.getText(),
+                dc_fundacion.getDate(), tf_himno.getText(), color));
+        jl_paises.setModel(modelo);
+        tf_nompais.setText("");
+        tf_himno.setText("");
+        dc_fundacion.setDate(new Date());
+        JOptionPane.showMessageDialog(this, "Agregado Correctamente");
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        DefaultListModel mm = (DefaultListModel) jl_mujeres.getModel();
+        DefaultListModel mh = (DefaultListModel) jl_hombres.getModel();
+        if (((String) cb_genero.getSelectedItem()).equals("Femenino")) {
+            mm.addElement(new Persona(tf_nacionalidad.getText(),
+                    tf_nombre.getText(), tf_apellido.getText(),
+                    (Integer) sp_edad.getValue(), "Femenino", tf_vocacion.getText(),
+                    (String) cb_titulo.getSelectedItem(),
+                    (String) cb_covid.getSelectedItem()));
+            jl_mujeres.setModel(mm);
+        } else {
+            mh.addElement(new Persona(tf_nacionalidad.getText(),
+                    tf_nombre.getText(), tf_apellido.getText(),
+                    (Integer) sp_edad.getValue(), "Masculino", tf_vocacion.getText(),
+                    (String) cb_titulo.getSelectedItem(),
+                    (String) cb_covid.getSelectedItem()));
+            jl_hombres.setModel(mh);
+        }
+        tf_nacionalidad.setText("");
+        tf_nombre.setText("");
+        tf_apellido.setText("");
+        sp_edad.setValue(20);
+        tf_vocacion.setText("");
+        cb_titulo.setSelectedIndex(0);
+        cb_covid.setSelectedIndex(0);
+        JOptionPane.showMessageDialog(this, "Agregado Correctamente");
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -54,7 +526,7 @@ public class Principal extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -79,5 +551,56 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Menu_add;
+    private javax.swing.JMenu Menu_list;
+    private javax.swing.JDialog add_country;
+    private javax.swing.JMenuItem add_pais;
+    private javax.swing.JDialog add_person;
+    private javax.swing.JMenuItem add_persona;
+    private javax.swing.JTree arborl1;
+    private javax.swing.JTree arborl2;
+    private javax.swing.JButton b_color;
+    private javax.swing.JComboBox<String> cb_covid;
+    private javax.swing.JComboBox<String> cb_genero;
+    private javax.swing.JComboBox<String> cb_titulo;
+    private com.toedter.calendar.JDateChooser dc_fundacion;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JList<String> jl_hombres;
+    private javax.swing.JList<String> jl_mujeres;
+    private javax.swing.JList<String> jl_paises;
+    private javax.swing.JSpinner sp_edad;
+    private javax.swing.JTextField tf_apellido;
+    private javax.swing.JTextField tf_himno;
+    private javax.swing.JTextField tf_nacionalidad;
+    private javax.swing.JTextField tf_nombre;
+    private javax.swing.JTextField tf_nompais;
+    private javax.swing.JTextField tf_vocacion;
     // End of variables declaration//GEN-END:variables
+private Color color;
 }

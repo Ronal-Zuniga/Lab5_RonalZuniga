@@ -8,20 +8,23 @@ public class Persona {
     private int edad;
     private String genero;
     private String vocacion;
+    private String titulo;
     private String covid;
 
     public Persona() {
     }
 
-    public Persona(String nacionalidad, String nombre, String apellido, int edad, String genero, String vocacion, String covid) {
+    public Persona(String nacionalidad, String nombre, String apellido, int edad, String genero, String vocacion, String titulo, String covid) {
         this.nacionalidad = nacionalidad;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.genero = genero;
         this.vocacion = vocacion;
+        this.titulo = titulo;
         this.covid = covid;
     }
+
 
     public String getNacionalidad() {
         return nacionalidad;
@@ -71,6 +74,14 @@ public class Persona {
         this.vocacion = vocacion;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
     public String getCovid() {
         return covid;
     }
@@ -81,7 +92,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return nombre;
+        return nombre+" "+apellido;
     }
     
 }
