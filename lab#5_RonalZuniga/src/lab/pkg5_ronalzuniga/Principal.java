@@ -488,7 +488,13 @@ public class Principal extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel21.setText("CONTROL DE CASOS COVID-19");
 
-        jButton4.setText("jButton4");
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton4.setText("Agregar a Infectado");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         Menu_add.setText("Agregar");
         Menu_add.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -527,9 +533,9 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(48, 48, 48)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jButton4)
-                .addGap(84, 84, 84)
+                .addGap(43, 43, 43)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(72, 72, 72))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -598,7 +604,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_add_paisActionPerformed
 
     private void b_colorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_colorMouseClicked
-        color = JColorChooser.showDialog(this, "Elija un Color", color);
+        JColorChooser c = new JColorChooser();
+        color = c.showDialog(this, "Elija un Color", Color.GRAY);
         b_color.setBackground(color);
     }//GEN-LAST:event_b_colorMouseClicked
 
@@ -878,6 +885,11 @@ public class Principal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_exActionPerformed
 
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    
     /**
      * @param args the command line arguments
      */
